@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE tiles-definitions PUBLIC 
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd"> 
+
+<tiles-definitions>
+	<definition name="mainLayout" template="/WEB-INF/view/layout/mainLayout.jsp"> 
+		<put-attribute name="title" value=""/>
+	  	<put-attribute name="header" value="/WEB-INF/view/layout/header.jsp"/>
+	  	<put-attribute name="menu" value="/WEB-INF/view/layout/menu.jsp"/>
+	  	<put-attribute name="body" value="/WEB-INF/view/layout/body.jsp"/>
+	  	<put-attribute name="footer" value="/WEB-INF/view/layout/footer.jsp"/>
+	</definition>
+	 
+	<definition name="home.tiles" extends="mainLayout">
+		<put-attribute name="title" value="home Controller Test"/>
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+	</definition>
+	<!-- <definition name="contentLayout" template="/WEB-INF/view/layout/contentLayout.jsp">
+	 	<put-attribute name="header" value="/WEB-INF/view/layout/header.jsp"/>
+	 	<put-attribute name="body" value="/WEB-INF/view/layout/body.jsp"/>
+	</definition>
+	
+	<definition name="tiles/management" extends="mainLayout">
+		<put-attribute name="title" value="EMC Management"/>
+	 	<put-attribute name="body" value="/WEB-INF/view/main/Management.jsp"/>
+	</definition>
+	
+	<definition name="tiles/monitor" extends="mainLayout">
+		<put-attribute name="title" value="EMC Monitor"/>
+	 	<put-attribute name="body" value="/WEB-INF/view/main/Monitor.jsp"/>
+	</definition>
+	
+	<definition name="tiles/modeling" extends="mainLayout">
+		<put-attribute name="title" value="EMC Modeling"/>
+	 	<put-attribute name="body" value="/WEB-INF/view/main/Modeling.jsp"/>
+	</definition>
+	
+	<definition name="tiles/resource" extends="mainLayout">
+		<put-attribute name="title" value="EMC Resource"/>
+	 	<put-attribute name="body" value="/WEB-INF/view/main/Resource.jsp"/>
+	</definition> 
+	
+	 contentLayout Start
+	<definition name="tiles/product/productInfo" extends="contentLayout">
+		<put-attribute name="body" value="/WEB-INF/view/product/productInfo.jsp"/>
+	</definition> -->
+	
+	
+</tiles-definitions>
